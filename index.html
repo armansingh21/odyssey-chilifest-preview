@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d0e">
+  <meta name="description" content="The Odyssey. Gather your crew for a Chilifest voyage. Explore the theme, package, and ticket information.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>The Odyssey — Chilifest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="media/odyssey-reel-poster.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Background film: one fixed layer behind the whole page. site.js picks the file (landscape or portrait), and handles pause, sound and reduced motion. -->
+  <div class="film" aria-hidden="true">
+    <video class="film-video" muted loop playsinline preload="none" poster="media/odyssey-still.jpg"
+           data-poster-playing="media/odyssey-reel-poster.jpg"></video>
+    <div class="film-shade"></div>
+  </div>
+
+  <header class="header" id="top">
+    <a class="wordmark" href="#home" aria-label="The Odyssey, back to top">THE ODYSSEY</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#experience">The experience</a>
+      <a href="#package">The package</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <button class="sound-toggle" type="button" aria-pressed="false" hidden>
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="sound-label">SOUND OFF</span>
+    </button>
+    <a class="button button-small header-ticket" href="#tickets">Tickets</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+    <a href="#experience">The experience</a>
+    <a href="#package">The package</a>
+    <a href="#questions">Questions</a>
+    <a href="#tickets">Ticket information</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero window" id="home" aria-labelledby="hero-title">
+      <div class="hero-top mono"><span>CHILIFEST</span><span>A FIRST LOOK · DETAILS TO COME</span></div>
+      <div class="hero-content">
+        <p class="mono kicker">GATHER YOUR CREW. ANSWER THE CALL.</p>
+        <h1 id="hero-title" class="display"><span>THE</span> <span>ODYSSEY</span></h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="hero-lede">Some weekends become legends.<br>This one is ours to write.</p>
+        <div class="hero-actions">
+          <a class="button" href="#tickets">Ticket information</a>
+          <a class="button button-ghost" href="#experience">The experience</a>
+        </div>
+      </div>
+      <div class="hero-bottom mono">
+        <span class="hide-sm">AN ANCIENT EPIC. A NEW CHAPTER.</span>
+        <button class="film-toggle" type="button" aria-pressed="false" hidden>
+          <span class="film-toggle-icon" aria-hidden="true"></span><span class="film-toggle-label">PAUSE FILM</span>
+        </button>
+        <a href="#experience" class="scroll-cue">SCROLL <span class="scroll-line" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <div class="panel">
+      <div class="event-strip">
+        <div><span class="mono">THE OCCASION</span><span>Chilifest</span></div>
+        <div><span class="mono">THIS YEAR’S THEME</span><span>The Odyssey</span></div>
+        <div><span class="mono">THE DATES</span><span>To be announced <span class="tbc">TBC</span></span></div>
+        <div><span class="mono">YOUR NEXT MOVE</span><a href="#tickets">Ticket information →</a></div>
+      </div>
+
+      <section class="intro section" id="experience" aria-labelledby="intro-title">
+        <div class="section-label mono"><span class="label-mark" aria-hidden="true">I</span> THE EXPERIENCE</div>
+        <div class="intro-content">
+          <h2 id="intro-title" class="display">Leave the ordinary <span class="muted">on the shore.</span></h2>
+          <div class="intro-bottom">
+            <p class="intro-lead">Open seas. Uncharted territory. The people you’d take anywhere.</p>
+            <p>Homer gave us the journey. We’re bringing it to Chilifest: a weekend built around our crew, with a theme that feels as big as the memories we’re here to make.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="journey" aria-labelledby="journey-title">
+        <div class="journey-copy">
+          <p class="mono"><span class="label-mark" aria-hidden="true">II</span> INSPIRED BY THE EPIC</p>
+          <h2 id="journey-title" class="display">A long way from ordinary.</h2>
+          <p>Ancient roots. A cinematic outlook. Our own chapter of The Odyssey.</p>
+          <span class="mono journey-caption">HOMER’S WORLD. OUR WEEKEND.</span>
+        </div>
+        <div class="map-wrap">
+          <svg class="voyage-map" viewBox="0 0 800 650" role="img" aria-label="An abstract topographic voyage chart connecting a departure point, open water, and a destination"><defs><pattern id="mapgrid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="#2a2e2f" stroke-width=".6"/></pattern></defs><path fill="#111415" d="M0 0h800v650H0z"/><path fill="url(#mapgrid)" d="M0 0h800v650H0z"/><g fill="none" stroke="#5d5a52" opacity=".55"><path d="M-50 80Q230-40 260 130T460 270 530 450 850 550M-50 100Q205-10 235 150T440 290 510 470 850 580M-50 120Q180 20 210 170T420 310 490 490 850 610M-50 140Q155 50 185 190T400 330 470 510 850 640M-50 160Q130 80 160 210T380 350 450 530 850 670M-50 180Q105 110 135 230T360 370 430 550 850 700M-50 200Q80 140 110 250T340 390 410 570 850 730M-50 220Q55 170 85 270T320 410 390 590 850 760M-50 240Q30 200 60 290T300 430 370 610 850 790M-50 260Q5 230 35 310T280 450 350 630 850 820M470-30Q420 100 570 130T850 350M490-30Q440 80 590 110T850 320M510-30Q460 60 610 90T850 290M530-30Q480 40 630 70T850 260M550-30Q500 20 650 50T850 230"/></g><path class="route" d="M160 480C290 470 210 270 390 310S550 210 650 160" fill="none" stroke="#e0703a" stroke-width="2" stroke-dasharray="6 7"/><g fill="#e0703a" stroke="#111415" stroke-width="7"><circle cx="160" cy="480" r="10"/><circle cx="390" cy="310" r="10"/><circle cx="650" cy="160" r="10"/></g><g fill="none" stroke="#e0703a" opacity=".45"><circle cx="160" cy="480" r="22"/><circle cx="650" cy="160" r="28"/><circle cx="650" cy="160" r="38"/></g><g fill="#ddd5c6" font-size="13" font-family="IBM Plex Mono, monospace" letter-spacing="2"><text x="185" y="505">THE DEPARTURE</text><text x="415" y="335">THE VOYAGE</text><text x="505" y="130">THE DESTINATION</text></g><g stroke="#8d877c" fill="none"><path d="M710 480v75m-37-37h75m-37-30-7 24h14z"/></g><text x="705" y="468" fill="#8d877c" font-size="12" font-family="IBM Plex Mono, monospace">N</text></svg>
+          <div class="map-caption mono"><span>THE VOYAGE / A CONCEPTUAL CHART</span><span>NOT A ROUTE MAP</span></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Window back onto the film -->
+    <section class="interlude window" aria-label="From Homer’s Odyssey">
+      <figure>
+        <blockquote class="display">“Tell me, O Muse, of that ingenious hero who travelled far and wide.”</blockquote>
+        <figcaption class="mono">HOMER · THE ODYSSEY, BOOK I · TRANS. SAMUEL BUTLER</figcaption>
+      </figure>
+    </section>
+
+    <div class="panel panel-stone">
+      <section class="package section" id="package" aria-labelledby="package-title">
+        <div class="section-label mono"><span class="label-mark" aria-hidden="true">III</span> THE PACKAGE</div>
+        <div class="package-main">
+          <div class="package-heading">
+            <h2 id="package-title" class="display">Your weekend. All on board.</h2>
+            <p class="notice mono"><span class="tbc">PROVISIONAL</span> Contents and price are not final. Nothing below is confirmed yet.</p>
+          </div>
+          <div class="package-grid">
+            <figure class="merch">
+              <span class="mono merch-top">THE ODYSSEY / CREW ISSUE</span>
+              <img src="shirt-concept.svg" width="360" height="380" alt="Illustrative dark Odyssey shirt concept with a Greek sailing ship design">
+              <figcaption class="merch-bottom mono">SHIRT CONCEPT · NOT THE FINAL DESIGN</figcaption>
+            </figure>
+            <div class="package-details">
+              <article><span class="mono item-type">ADMISSION <span class="tbc">TBC</span></span><h3>Your way in.</h3><p>Festival ticket information and whether it’s part of the package will be confirmed before sales open.</p></article>
+              <article><span class="mono item-type">THE CREW SHIRT <span class="tbc">TBC</span></span><h3>Wear the voyage.</h3><p>An Odyssey-inspired shirt concept. Final artwork, sizing, and whether it’s included are still being decided.</p></article>
+              <article><span class="mono item-type">THE DETAILS <span class="tbc">TBC</span></span><h3>A plan for the crew.</h3><p>Pickup information and the weekend schedule will be posted here once confirmed.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Second window onto the film -->
+    <section class="ticket-section window" id="tickets" aria-labelledby="tickets-title">
+      <div class="ticket-top mono"><span><span class="label-mark" aria-hidden="true">IV</span> YOUR NEXT CHAPTER</span><span class="status"><span class="status-dot" aria-hidden="true"></span>SALES NOT YET OPEN</span></div>
+      <div class="ticket-content">
+        <h2 id="tickets-title" class="display">Good stories start with a great crew.</h2>
+        <div class="ticket-action">
+          <p>The voyage is taking shape. Official tickets, package pricing, and dates will be announced here.</p>
+          <!-- site.js turns this into a checkout link once CHECKOUT_URL is set -->
+          <a class="button button-large ticket-buy" data-checkout aria-disabled="true" role="link">Tickets coming soon</a>
+          <p class="ticket-footnote">Purchases will be completed on our official event platform (Posh or Bounce, to be confirmed). We never take payment on this site.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="panel">
+      <section class="faq section" id="questions" aria-labelledby="faq-title">
+        <div class="section-label mono"><span class="label-mark" aria-hidden="true">V</span> BEFORE YOU GO</div>
+        <div class="faq-main">
+          <h2 id="faq-title" class="display">Know before you set sail.</h2>
+          <div class="faq-items">
+            <details><summary>When and where is the event?</summary><p>Confirmed Chilifest dates, location, and our crew’s schedule will be posted here before ticket sales open.</p></details>
+            <details><summary>What’s included in the package?</summary><p>We’re still deciding on admission, the themed shirt, and any other inclusions. The complete package and price will be listed before you buy.</p></details>
+            <details><summary>Where do I buy my ticket?</summary><p>Once sales open, the ticket button on this page will take you to the official Posh or Bounce event checkout, where you pay and receive your confirmation.</p></details>
+            <details><summary>How do I collect my shirt or wristband?</summary><p>Pickup dates, locations, and what to bring will be shared here once confirmed.</p></details>
+            <details><summary>Can I transfer my ticket or request a refund?</summary><p>Transfer and refund policies will be shown on the official event checkout before sales begin.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <a class="wordmark" href="#home">THE ODYSSEY</a>
+          <p>A journey worth taking.<br>A crew worth taking it with.</p>
+          <a class="mono back-top" href="#home">BACK TO TOP ↑</a>
+        </div>
+        <div class="footer-bottom mono">
+          <span>CHILIFEST / THE ODYSSEY</span>
+          <span>INDEPENDENT EVENT · INSPIRED BY HOMER · NOT AFFILIATED WITH ANY FILM STUDIO</span>
+          <span>DESIGN DRAFT</span>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <div class="mobile-ticket">
+    <span>THE ODYSSEY<small>Chilifest · sales not yet open</small></span>
+    <a class="button button-small" href="#tickets">Tickets</a>
+  </div>
+</body>
+</html>
